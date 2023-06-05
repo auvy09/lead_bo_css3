@@ -1,7 +1,8 @@
 /* commom */
 main {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 body {
@@ -14,10 +15,13 @@ body {
     background-color: #F3F1FF;
     width: 870px;
     padding: 30px;
+    margin-top: 21px;
+    border-radius: 10px;
 }
 
 hr {
     border: 1px solid #D1D1D1;
+    margin-bottom: 27px;
 }
 
 /* top player */
@@ -53,5 +57,134 @@ hr {
 .p-name {
     margin-left: 16px;
     font-size: 18px;
+
+}
+
+/* top blog */
+.blog-up {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 26px;
+
+}
+
+.blogs {
+    display: flex;
+}
+
+.blog-info {
+    margin-left: 16px;
+}
+
+.blogs .thumbnail img {
+    width: 177px;
+    height: 117px;
+    border-radius: 10%;
+}
+
+.blog-name {
+    font-size: 20px;
+}
+
+.blog-author {
+    font-size: 16px;
+    color: #9F9F9F;
+
+}
+
+.blog-author a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #562EFF;
+}
+
+/* song style  */
+.courses {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 24px;
+}
+
+.course {
+    padding-right: 40px;
+}
+
+.course .course-b img {
+    width: 224px;
+    height: 104px;
+    border-radius: 7%;
+}
+
+.fa-star {
+    Width: 12.25px;
+    Height: 11.75px;
+}
+
+.fa-star.filled {
+    color: #FFC014;
+}
+
+.fa-star.emp {
+    color: #AEAEAE;
+}
+
+.song-rate {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.song-time {
+    background-color: #FFE4E8;
+    border-radius: 14.6913px;
+}
+
+.fa-clock {
+    font-size: 14.6913px;
+    color: #FF4A60;
+
+}
+
+.song-info a {
+    text-decoration: none;
+    font-size: 14.56px;
+    color: #ED6B4F;
+}
+
+/* medis for mobile 0 */
+@media only screen and (max-width:688px) {
+    .contain {
+        width: 100%;
+    }
+
+    .players {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .player {
+
+        flex-direction: column;
+    }
+
+    .blog-up {
+        flex-direction: column;
+    }
+
+    .course {
+        flex-direction: column;
+    }
+
+    .blog-up {
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+
+    }
+
+    .courses {
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+    }
+
+
 
 }
